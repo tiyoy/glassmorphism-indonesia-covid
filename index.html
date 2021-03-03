@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid 19 - Glassmorphism</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <div class="glass">
+            <h2 class="title">COVID-19 INDONESIA LIVE DATA</h2>
+
+            <div class="card-container" id="card-container"></div>
+
+            <p class="update" id="update"></p>
+            
+            <p class="cecep" id="cecep"></p>
+            
+        </div>
+    </main>
+
+    <div class="square1"></div>
+    <div class="square2"></div>
+    
+    <script src="api.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            getData();
+        });
+    </script>
+</body>
+</html>
